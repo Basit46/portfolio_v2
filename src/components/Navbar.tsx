@@ -8,7 +8,7 @@ type NavbarPropType = {
 
 const Navbar = ({ isOpen, setIsOpen }: NavbarPropType) => {
   return (
-    <nav className="z-[3] w-full h-[12vh] px-[60px] py-[20px] flex justify-between items-center">
+    <nav className="z-[3] w-full h-[12vh] px-[40px] xmd:px-[60px] py-[20px] flex justify-between items-center">
       <h1 className="text-[2rem]">Basit</h1>
       <ul
         className={`${
