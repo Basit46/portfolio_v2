@@ -21,7 +21,7 @@ body {
     @apply text-[2rem] md:text-[1.4rem] cursor-pointer hover:text-blue-600 duration-500;
   }
   .about ul {
-    @apply flex flex-wrap gap-x-[20px] gap-y-[5px] w-[80%] xmd:w-[40%] mt-[40px];
+    @apply flex flex-wrap gap-x-[20px] gap-y-[5px] w-full vsm:w-[80%] xmd:w-[40%] mt-[40px];
   }
   .about li {
     @apply text-[1.3rem];

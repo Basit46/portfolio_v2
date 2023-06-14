@@ -2,7 +2,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="mt-[200px] px-[20px] vsm:px-[40px] xmd:px-[60px] pb-[50px] w-full min-h-[50vh] flex flex-col justify-between">
+    <footer className="mt-[100px] vsm:mt-[200px] px-[20px] vsm:px-[40px] xmd:px-[60px] pb-[50px] w-full min-h-[50vh] flex flex-col justify-between">
       <div>
         <h1 className="font-braah text-[4rem] leading-none">lets Connect 🤝</h1>
         <a

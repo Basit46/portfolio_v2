@@ -29,7 +29,7 @@ const Project = ({ project }: ProjectProp) => {
         <p className="mt-[10px] mb-[20px] w-full xmd:w-[50%] text-[1rem] md:text-[1.2rem]">
           {project.desc}
         </p>
-        <div className="flex gap-[30px] items-center">
+        <div className="flex flex-col vsm:flex-row gap-[10px] vsm:gap-[30px] items-start vsm:items-center">
           <a className="link" href={project.site} target="blank">
             Visit website
             <FiArrowUpRight />

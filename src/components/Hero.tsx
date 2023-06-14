@@ -13,7 +13,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative w-[100vw] min-h-[88vh] px-[40px] xmd:px-[60px] pt-[40px] xmd:pt-[100px] pb-[30px] flex justify-between">
+    <div className="relative w-[100vw] min-h-[88vh] px-[20px] vsm:px-[40px] xmd:px-[60px] pt-[30px] vsm:pt-[40px] xmd:pt-[100px] pb-[30px] flex justify-between">
       <p className="absolute xl:static self-end text-[3rem] leading-[1.3]">
         My
         <br />
