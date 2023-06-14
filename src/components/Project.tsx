@@ -14,7 +14,7 @@ type ProjectProp = {
 const Project = ({ project }: ProjectProp) => {
   return (
     <div className="project w-full h-fit flex flex-col items-start gap-y-[20px]">
-      <div className="w-fit">
+      <div className="w-fit border-[2px] border-white rounded-[10px] overflow-hidden">
         <img
           className="h-full w-full object-fit"
           src={project.img}

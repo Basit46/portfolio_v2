@@ -17,7 +17,7 @@ body {
 }
 
 @layer components {
-  nav ul li {
+  nav ul a li {
     @apply text-[2rem] md:text-[1.4rem] cursor-pointer hover:text-blue-600 duration-500;
   }
   .about ul {

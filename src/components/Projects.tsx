@@ -3,7 +3,10 @@ import Project from "./Project";
 
 const Projects = () => {
   return (
-    <div className="w-full mt-[50px] px-[20px] vsm:px-[40px] xmd:px-[60px] pt-[40px] min-h-[100vh]">
+    <div
+      id="projects"
+      className="w-full mt-[50px] px-[20px] vsm:px-[40px] xmd:px-[60px] pt-[40px] min-h-[100vh]"
+    >
       <h1 className="text-[4rem] leading-none font-braah">Featured Projects</h1>
       <a
         href="https://github.com/Basit46"

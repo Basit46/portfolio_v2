@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 type NavbarPropType = {
   isOpen: boolean;
@@ -15,10 +16,42 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarPropType) => {
           isOpen ? "" : "hidden md:flex"
         } z-[10] fixed top-0 left-0 bottom-0 w-full h-[100vh] bg-[#050000] md:bg-transparent md:static flex flex-col md:flex-row gap-[30px] justify-center md:justify-end items-center`}
       >
-        <li>About</li>
-        <li>Project</li>
-        <li>Contact</li>
-        <li>Github</li>
+        <Link
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <li onClick={() => setIsOpen(false)}>About</li>
+        </Link>
+
+        <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <li onClick={() => setIsOpen(false)}>Projects</li>
+        </Link>
+
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={2000}
+        >
+          <li onClick={() => setIsOpen(false)}>Contact</li>
+        </Link>
+
+        <a href="https://github.com/Basit46" target="blank">
+          <li>Github</li>
+        </a>
       </ul>
       <FaBars
         onClick={() => setIsOpen((prev) => !prev)}

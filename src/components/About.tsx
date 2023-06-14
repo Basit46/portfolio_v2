@@ -3,7 +3,10 @@ import spartaFight from "../assets/spartans-fight.gif";
 
 const About = () => {
   return (
-    <div className="about mt-[50px] min-h-[100vh] w-full relative px-[20px] vsm:px-[40px] xmd:px-[60px] pt-[50px]">
+    <div
+      id="about"
+      className="about mt-[50px] min-h-[100vh] w-full relative px-[20px] vsm:px-[40px] xmd:px-[60px] pt-[50px]"
+    >
       <div className="absolute opacity-50 lg:opacity-100 right-0 top-[-10px] z-[-1] h-full w-fit overflow-hidden">
         <img className="sparta object-cover" src={sparta} alt="sparta_Img" />
       </div>
@@ -32,7 +35,7 @@ const About = () => {
         <li>Next JS</li>
         <li>Basic Solidity</li>
       </ul>
-      <ul className="block vsm:hidden">
+      <ul className="">
         <li>GSAP</li>
         <li>Redux Toolkit</li>
         <li>Firebase</li>
