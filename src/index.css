@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400&family=Braah+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #050000;
+  background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+}
+
+.sparta {
+  transform: rotateY(180deg);
+}
+
+@layer components {
+  nav ul li {
+    @apply text-[2rem] md:text-[1.4rem] cursor-pointer hover:text-blue-600 duration-500;
+  }
+  .about ul {
+    @apply flex flex-wrap gap-x-[20px] gap-y-[5px] w-[80%] xmd:w-[40%] mt-[40px];
+  }
+  .about li {
+    @apply text-[1.3rem];
+  }
+  .project .link {
+    @apply bg-gray-600 px-[20px] py-[8px] flex rounded-[20px] w-fit;
+  }
+
+  footer a svg {
+    @apply text-[1.9rem] hover:text-blue-400;
+  }
+}
