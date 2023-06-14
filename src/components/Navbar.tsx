@@ -12,8 +12,8 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarPropType) => {
       <h1 className="text-[2rem]">Basit</h1>
       <ul
         className={`${
-          isOpen ? "" : "hidden"
-        } z-[10] fixed top-0 left-0 w-full h-full bg-[#050000] md:bg-none md:static flex flex-col md:flex-row gap-[30px] justify-center md:justify-start items-center`}
+          isOpen ? "" : "hidden md:flex"
+        } z-[10] fixed top-0 left-0 w-full h-full bg-[#050000] md:bg-transparent md:static flex flex-col md:flex-row gap-[30px] justify-center md:justify-end items-center`}
       >
         <li>About</li>
         <li>Project</li>
