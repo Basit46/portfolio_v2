@@ -3,8 +3,17 @@ import getcollab from "../assets/gchome.png";
 import nique from "../assets/nique-home.png";
 import unicus from "../assets/unicus.png";
 import harmony from "../assets/harmony.png";
+import verso from "../assets/verso.png";
 
 export const projectsData = [
+  {
+    id: 6,
+    img: verso,
+    title: "Verso Blog",
+    desc: "A Blog where different people can sign up and contribute to the blog by writing articles",
+    site: "https://verso-blog.vercel.app/",
+    github: "https://github.com/Basit46/Blog",
+  },
   {
     id: 1,
     img: getcollab,
