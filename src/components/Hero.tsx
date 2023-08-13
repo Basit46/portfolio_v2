@@ -2,14 +2,14 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 
 const Hero = () => {
-  const text1Ref = useRef(null);
+  const heroTexts = useRef<HTMLSpanElement[]>([]);
 
   useEffect(() => {
-    gsap.fromTo(
-      text1Ref.current,
-      { skewY: 10, y: 100, stagger: { amount: 0.4 } },
-      { skewY: 0, y: 0, duration: 1.5 }
-    );
+    gsap.to(heroTexts.current, {
+      y: 0,
+      rotate: 0,
+      duration: 1,
+    });
   }, []);
 
   return (
@@ -23,13 +23,21 @@ const Hero = () => {
       </p>
 
       <div className="w-full xl:w-fit text-right flex flex-col justify-between">
-        <h1
-          // ref={text1Ref}
-          className="font-braah text-[4.89rem] vsm:text-[6.5rem] sm:text-[9rem] lg:text-[12rem] leading-none text-right"
-        >
-          Hello,
-          <br />
-          I'm Basit
+        <h1 className="overflow-hidden">
+          <span
+            ref={(el) => heroTexts.current.push(el as HTMLSpanElement)}
+            className="inline-block translate-y-[100%] origin-left rotate-[30deg] font-braah text-[4.89rem] vsm:text-[6.5rem] sm:text-[9rem] lg:text-[12rem] leading-none text-right"
+          >
+            Hello,
+          </span>
+        </h1>
+        <h1 className="overflow-hidden">
+          <span
+            ref={(el) => heroTexts.current.push(el as HTMLSpanElement)}
+            className="inline-block translate-y-[100%] origin-left rotate-[30deg] font-braah text-[4.89rem] vsm:text-[6.5rem] sm:text-[9rem] lg:text-[12rem] leading-none text-right"
+          >
+            I'm Basit
+          </span>
         </h1>
 
         <a

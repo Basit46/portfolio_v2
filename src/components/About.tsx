@@ -1,9 +1,34 @@
+import { useEffect, useRef } from "react";
 import sparta from "../assets/logo.png";
-import spartaFight from "../assets/spartans-fight.gif";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const About = () => {
+  const aboutTexts = useRef<any>([]);
+  const aboutSection = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      aboutTexts.current,
+      {
+        opacity: 0,
+        y: "50%",
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: aboutSection.current,
+          start: "top center",
+        },
+      }
+    );
+  }, []);
   return (
     <div
+      ref={aboutSection}
       id="about"
       className="about mt-[50px] min-h-[100vh] w-full relative px-[20px] vsm:px-[40px] xmd:px-[60px] pt-[50px]"
     >
@@ -11,21 +36,24 @@ const About = () => {
         <img className="sparta object-cover" src={sparta} alt="sparta_Img" />
       </div>
 
-      <h1 className="font-braah text-[4rem]">About Me</h1>
-      <p className="text-[1.8rem] w-full xl:w-[50%] ">
-        I'm a Frontend developer with 2 years of experience with frontend tools.
-        Like a fearless Spartan warrior{" "}
-        <span className="h-fit w-fit">
-          <img
-            className="inline h-[1.8rem] w-[55px] rounded-[20px]"
-            src={spartaFight}
-            alt="spartafight"
-          />
-        </span>{" "}
-        of the digital realm, I forge flawless user experiences, battling
-        through the front lines of code to conquer the hearts of users.
-      </p>
-      <ul>
+      <h1
+        ref={(el) => aboutTexts.current.push(el)}
+        className="font-braah text-[4rem]"
+      >
+        About Me
+      </h1>
+      <div className="w-full xl:w-[50%]">
+        <p
+          ref={(el) => aboutTexts.current.push(el)}
+          className="text-[1.8rem] w-fit "
+        >
+          Transforming Vision into Reality: Elevating User Experiences Through
+          Innovative Frontend Development. Let's Collaborate to Create Web
+          Solutions that Captivate, Engage, and Inspire.
+        </p>
+      </div>
+
+      <ul ref={(el) => aboutTexts.current.push(el)}>
         <li>HTML</li>
         <li>CSS</li>
         <li>Tailwind CSS</li>
@@ -35,7 +63,8 @@ const About = () => {
         <li>Next JS</li>
         <li>Basic Solidity</li>
       </ul>
-      <ul className="">
+      <ul ref={(el) => aboutTexts.current.push(el)}>
+        <li>Ether JS</li>
         <li>GSAP</li>
         <li>Redux Toolkit</li>
         <li>Firebase</li>
