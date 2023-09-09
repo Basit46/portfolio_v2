@@ -23,7 +23,7 @@ const Project = ({ project }: ProjectPropType) => {
   useEffect(() => {
     gsap.to(coverRef.current, {
       width: 0,
-      duration: 2,
+      duration: 1,
       scrollTrigger: {
         trigger: coverRef.current,
       },
@@ -38,7 +38,7 @@ const Project = ({ project }: ProjectPropType) => {
       },
       {
         scale: 1,
-        duration: 2,
+        duration: 1,
 
         scrollTrigger: {
           trigger: coverRef.current,
@@ -48,25 +48,25 @@ const Project = ({ project }: ProjectPropType) => {
   }, []);
 
   return (
-    <div className="project w-full h-fit flex flex-col items-start gap-y-[20px]">
-      <div className="w-[70vw] h-fit relative border-[2px] border-white rounded-[10px] overflow-hidden">
+    <div className="project w-full h-fit flex flex-col xmd:flex-row items-start xmd:items-center gap-y-[20px] xmd:gap-x-[30px]">
+      <div className="w-full md:w-[70vw] xmd:w-[50vw] h-fit relative rounded-[10px] overflow-hidden">
         <img
           ref={imgRef}
-          className="h-full w-full object-fit"
+          className="h-full w-full object-fit border-white border-[1px] rounded-[15px]"
           src={project.img}
           alt="project_img"
         />
         <div
           ref={coverRef}
-          className="absolute top-0 right-0 w-[80%] h-full bg-white"
+          className="absolute top-0 right-0 w-[80%] h-full bg-black"
         />
       </div>
 
-      <div className="w-full">
+      <div className="w-full xmd:w-auto xmd:flex-1">
         <h1 className="text-[2rem] xmd:text-[3rem] leading-none font-semibold">
           {project.title}
         </h1>
-        <p className="mt-[10px] mb-[20px] w-full xmd:w-[50%] text-[1rem] md:text-[1.2rem]">
+        <p className="mt-[10px] mb-[20px] w-full xmd:w-full  text-[1rem] md:text-[1.2rem]">
           {project.desc}
         </p>
         <div className="flex flex-col vsm:flex-row gap-[10px] vsm:gap-[30px] items-start vsm:items-center">

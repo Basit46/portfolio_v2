@@ -4,8 +4,17 @@ import nique from "../assets/nique-home.png";
 import unicus from "../assets/unicus.png";
 import harmony from "../assets/harmony.png";
 import verso from "../assets/verso.png";
+import thrifts from "../assets/thrifts.png";
 
 export const projectsData = [
+  {
+    id: 7,
+    img: thrifts,
+    title: "Thrift Ecommerce Store",
+    desc: "An Ecommerce store built with Next.js 13 and powered by Stripe Checkout",
+    site: "https://shopthrifts.vercel.app/",
+    github: "https://github.com/Basit46/Thrift-ecommerce-store",
+  },
   {
     id: 6,
     img: verso,
