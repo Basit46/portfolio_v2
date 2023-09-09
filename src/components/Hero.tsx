@@ -22,7 +22,7 @@ const Hero = () => {
         Showcase
       </p>
 
-      <div className="w-full xl:w-fit text-right flex flex-col justify-between">
+      <div className="w-full xl:w-fit text-right flex flex-col md:justify-between">
         <h1 className="overflow-hidden">
           <span
             ref={(el) => heroTexts.current.push(el as HTMLSpanElement)}
