@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import sparta from "../assets/logo.png";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const About = () => {
   const aboutTexts = useRef<any>([]);

@@ -8,8 +8,8 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  background-color: #050000;
-  background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+  background-color: black;
+  /* background-image: url("https://www.transparenttextures.com/patterns/xv.png"); */
 }
 
 .sparta {
