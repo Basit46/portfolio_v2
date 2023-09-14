@@ -2,7 +2,7 @@ import bookmarker from "../assets/bookmarker.png";
 import getcollab from "../assets/gchome.png";
 import nique from "../assets/nique-home.png";
 import unicus from "../assets/unicus.png";
-import harmony from "../assets/harmony.png";
+// import harmony from "../assets/harmony.png";
 import verso from "../assets/verso.png";
 import thrifts from "../assets/thrifts.png";
 
