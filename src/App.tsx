@@ -11,7 +11,7 @@ function App() {
     <div
       className={`${
         isOpen ? "h-[100vh] overflow-hidden" : "h-full"
-      } w-full font-BioRhyme text-white`}
+      } w-full max-w-[1400px] mx-auto font-BioRhyme bg-black text-white`}
     >
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       <Hero />

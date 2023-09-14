@@ -13,7 +13,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative w-[100vw] min-h-[80vh] vsm:min-h-[88vh] px-[20px] vsm:px-[40px] xmd:px-[60px] pt-[60px] vsm:pt-[40px] xmd:pt-[100px] pb-[30px] flex justify-between">
+    <div className="relative w-full min-h-[80vh] vsm:min-h-[88vh] px-[20px] vsm:px-[40px] xmd:px-[60px] pt-[60px] vsm:pt-[40px] xmd:pt-[100px] pb-[30px] flex justify-between">
       <p className="absolute xl:static self-end text-[3rem] leading-[1.3]">
         My
         <br />
@@ -22,7 +22,7 @@ const Hero = () => {
         Showcase
       </p>
 
-      <div className="w-full xl:w-fit text-right flex flex-col md:justify-between">
+      <div className="w-full xl:w-fit text-right flex flex-col">
         <h1 className="overflow-hidden">
           <span
             ref={(el) => heroTexts.current.push(el as HTMLSpanElement)}
@@ -41,7 +41,7 @@ const Hero = () => {
         </h1>
 
         <a
-          className="hidden xmd:block text-[1.5rem]"
+          className="hidden xmd:block text-[1.5rem] m mt-auto"
           href="mailto:Hassanbasitope@gmail.com"
         >
           Hassanbasitope@gmail.com

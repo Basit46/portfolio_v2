@@ -29,7 +29,7 @@ const About = () => {
     <div
       ref={aboutSection}
       id="about"
-      className="about mt-[50px] min-h-[100vh] w-full relative px-[20px] vsm:px-[40px] xmd:px-[60px] pt-[50px]"
+      className="about relative mt-[50px] min-h-[100vh] w-full px-[20px] vsm:px-[40px] xmd:px-[60px] pt-[50px]"
     >
       <div className="absolute opacity-50 lg:opacity-100 right-0 top-[-10px] z-[-1] h-full w-fit overflow-hidden">
         <img className="sparta object-cover" src={sparta} alt="sparta_Img" />

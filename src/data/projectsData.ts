@@ -39,14 +39,14 @@ export const projectsData = [
     site: "https://nique-restaurant.netlify.app/",
     github: "https://github.com/Basit46/Nique-Restaurant-Website",
   },
-  {
-    id: 3,
-    img: harmony,
-    title: "Harmony Launcher",
-    desc: "My own version of harmony launcher website",
-    site: "https://harmony-launcher.netlify.app/",
-    github: "https://github.com/Basit46/harmony-launcher",
-  },
+  // {
+  //   id: 3,
+  //   img: harmony,
+  //   title: "Harmony Launcher",
+  //   desc: "My own version of harmony launcher website",
+  //   site: "https://harmony-launcher.netlify.app/",
+  //   github: "https://github.com/Basit46/harmony-launcher",
+  // },
   {
     id: 4,
     img: unicus,

@@ -49,7 +49,7 @@ const Project = ({ project }: ProjectPropType) => {
 
   return (
     <div className="project w-full h-fit flex flex-col xmd:flex-row items-start xmd:items-center gap-y-[20px] xmd:gap-x-[30px]">
-      <div className="w-full md:w-[70vw] xmd:w-[50vw] h-fit relative rounded-[10px] overflow-hidden">
+      <div className="w-full md:w-[70%] xmd:w-[50%] h-fit relative rounded-[10px] overflow-hidden">
         <img
           ref={imgRef}
           className="h-full w-full object-fit border-white border-[1px] rounded-[15px]"
