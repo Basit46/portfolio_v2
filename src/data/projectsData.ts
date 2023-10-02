@@ -2,9 +2,10 @@ import bookmarker from "../assets/bookmarker.png";
 import getcollab from "../assets/gchome.png";
 import nique from "../assets/nique-home.png";
 import unicus from "../assets/unicus.png";
-// import harmony from "../assets/harmony.png";
+import harmony from "../assets/harmony.png";
 import verso from "../assets/verso.png";
 import thrifts from "../assets/thrifts.png";
+import newnft from "../assets/newnft.jpeg";
 
 export const projectsData = [
   {
@@ -14,6 +15,14 @@ export const projectsData = [
     desc: "An Ecommerce store built with Next.js 13 and powered by Stripe Checkout",
     site: "https://shopthrifts.vercel.app/",
     github: "https://github.com/Basit46/Thrift-ecommerce-store",
+  },
+  {
+    id: 8,
+    img: newnft,
+    title: "NFT Card Landing page",
+    desc: "Full landing page website of an NFT project.",
+    site: "https://newnftcards.vercel.app/",
+    github: "https://github.com/Basit46/nft-cards-website",
   },
   {
     id: 6,
@@ -39,14 +48,14 @@ export const projectsData = [
     site: "https://nique-restaurant.netlify.app/",
     github: "https://github.com/Basit46/Nique-Restaurant-Website",
   },
-  // {
-  //   id: 3,
-  //   img: harmony,
-  //   title: "Harmony Launcher",
-  //   desc: "My own version of harmony launcher website",
-  //   site: "https://harmony-launcher.netlify.app/",
-  //   github: "https://github.com/Basit46/harmony-launcher",
-  // },
+  {
+    id: 3,
+    img: harmony,
+    title: "Harmony Launcher",
+    desc: "My own version of harmony launcher website",
+    site: "https://harmony-launcher.netlify.app/",
+    github: "https://github.com/Basit46/harmony-launcher",
+  },
   {
     id: 4,
     img: unicus,
