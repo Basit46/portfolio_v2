@@ -6,6 +6,7 @@ import harmony from "../assets/harmony.png";
 import verso from "../assets/verso.png";
 import thrifts from "../assets/thrifts.png";
 import newnft from "../assets/newnft.jpeg";
+import hotel from "../assets/hotel.png";
 
 export const projectsData = [
   {
@@ -32,13 +33,21 @@ export const projectsData = [
     site: "https://verso-blog.vercel.app/",
     github: "https://github.com/Basit46/Blog",
   },
+  // {
+  //   id: 1,
+  //   img: getcollab,
+  //   title: "Get Collab",
+  //   desc: "A site I built that enables people from various areas in tech meet and collaborate on projects",
+  //   site: "https://getcollab.netlify.app/",
+  //   github: "https://github.com/Basit46/Get-Collab",
+  // },
   {
-    id: 1,
-    img: getcollab,
-    title: "Get Collab",
-    desc: "A site I built that enables people from various areas in tech meet and collaborate on projects",
-    site: "https://getcollab.netlify.app/",
-    github: "https://github.com/Basit46/Get-Collab",
+    id: 9,
+    img: hotel,
+    title: "Hotel Website",
+    desc: "This the landing page of an Hotel website. Built with React and Typescript. It also has a music player for users to have a good experience",
+    site: "https://bankhotel.vercel.app/",
+    github: "https://github.com/Basit46/Hotel-website",
   },
   {
     id: 2,

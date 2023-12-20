@@ -16,7 +16,7 @@
     @apply flex flex-wrap gap-x-[20px] gap-y-[5px] w-full vsm:w-[80%] xmd:w-[40%] mt-[40px];
   }
   .about li {
-    @apply text-[1.3rem];
+    @apply text-[1.3rem] vsm:text-[1.5rem];
   }
   .project .link {
     @apply bg-gray-600 px-[20px] py-[8px] flex rounded-[20px] w-fit;

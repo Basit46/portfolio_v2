@@ -39,9 +39,9 @@ const About = () => {
         ref={(el) => aboutTexts.current.push(el)}
         className="font-braah text-[4rem]"
       >
-        About Me
+        Tech Stack
       </h1>
-      <div className="w-full xl:w-[50%]">
+      {/* <div className="w-full xl:w-[50%]">
         <p
           ref={(el) => aboutTexts.current.push(el)}
           className="text-[1.8rem] w-fit "
@@ -50,7 +50,7 @@ const About = () => {
           Innovative Frontend Development. Let's Collaborate to Create Web
           Solutions that Captivate, Engage, and Inspire.
         </p>
-      </div>
+      </div> */}
 
       <ul ref={(el) => aboutTexts.current.push(el)}>
         <li>HTML</li>
@@ -60,14 +60,13 @@ const About = () => {
         <li>Typescript</li>
         <li>React JS</li>
         <li>Next JS</li>
-        <li>Basic Solidity</li>
+        <li>Solidity</li>
       </ul>
       <ul ref={(el) => aboutTexts.current.push(el)}>
         <li>Ether JS</li>
         <li>GSAP</li>
         <li>Redux Toolkit</li>
         <li>Firebase</li>
-        <li>Sanity</li>
         <li>Git & Github</li>
         <li>Netlify</li>
         <li>Vercel</li>
