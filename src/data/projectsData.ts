@@ -1,5 +1,5 @@
 import bookmarker from "../assets/bookmarker.png";
-import getcollab from "../assets/gchome.png";
+// import getcollab from "../assets/gchome.png";
 import nique from "../assets/nique-home.png";
 import unicus from "../assets/unicus.png";
 import harmony from "../assets/harmony.png";
