@@ -24,7 +24,7 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarPropType) => {
           offset={-70}
           duration={500}
         >
-          <li onClick={() => setIsOpen(false)}>About</li>
+          <li onClick={() => setIsOpen(false)}>Tech Stack</li>
         </Link>
 
         <Link
