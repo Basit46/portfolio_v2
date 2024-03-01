@@ -32,7 +32,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/hassanbasit/" target="blank">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/Basit0282" target="blank">
+          <a href="https://twitter.com/Basit_js" target="blank">
             <FaTwitter />
           </a>
         </div>

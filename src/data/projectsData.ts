@@ -7,6 +7,8 @@ import verso from "../assets/verso.png";
 import thrifts from "../assets/thrifts.png";
 import newnft from "../assets/newnft.jpeg";
 import hotel from "../assets/hotel.png";
+import onesport from "../assets/onesport.jpg";
+import { FaTeamspeak } from "react-icons/fa";
 
 export const projectsData = [
   {
@@ -42,6 +44,14 @@ export const projectsData = [
   //   github: "https://github.com/Basit46/Get-Collab",
   // },
   {
+    id: 10,
+    img: onesport,
+    title: "Football website",
+    desc: "This project is a football updates website powered by the ESPN API. Users can enjoy live match coverage, real-time scoreboards, the latest news, standings, and detailed match information. Users can also follow their favorite teams.",
+    site: "https://onesport-site.vercel.app",
+    github: "https://github.com/Basit46/Sports-Website",
+  },
+  {
     id: 9,
     img: hotel,
     title: "Hotel Website",
@@ -49,6 +59,7 @@ export const projectsData = [
     site: "https://bankhotel.vercel.app/",
     github: "https://github.com/Basit46/Hotel-website",
   },
+
   {
     id: 2,
     img: nique,
