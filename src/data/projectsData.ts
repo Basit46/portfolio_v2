@@ -8,7 +8,6 @@ import thrifts from "../assets/thrifts.png";
 import newnft from "../assets/newnft.jpeg";
 import hotel from "../assets/hotel.png";
 import onesport from "../assets/onesport.jpg";
-import { FaTeamspeak } from "react-icons/fa";
 
 export const projectsData = [
   {
