@@ -52,13 +52,13 @@ const Project = ({ project }: ProjectPropType) => {
       <div className="w-full md:w-[70%] xmd:w-[50%] h-fit relative rounded-[10px] overflow-hidden">
         <img
           ref={imgRef}
-          className="h-full w-full object-fit border-white border-[1px] rounded-[15px]"
+          className="h-full w-full object-fit rounded-[15px]"
           src={project.img}
           alt="project_img"
         />
         <div
           ref={coverRef}
-          className="absolute top-0 right-0 w-[80%] h-full bg-black"
+          className="absolute top-0 right-0 w-[80%] h-full bg-[#062c2c]"
         />
       </div>
 

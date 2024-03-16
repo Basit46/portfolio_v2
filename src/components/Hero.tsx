@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
+import Box3D from "./Box3D";
 
 const Hero = () => {
   const heroTexts = useRef<HTMLSpanElement[]>([]);
@@ -31,13 +32,17 @@ const Hero = () => {
             Hello,
           </span>
         </h1>
-        <h1 className="overflow-hidden">
+        <h1 className="relative ">
           <span
             ref={(el) => heroTexts.current.push(el as HTMLSpanElement)}
             className="inline-block translate-y-[100%] origin-left rotate-[30deg] font-braah text-[4.89rem] vsm:text-[6.5rem] sm:text-[9rem] lg:text-[12rem] leading-none text-right"
           >
             I'm Basit
           </span>
+
+          <div className="hidden dmd:block absolute top-[-60px] left-[225px]">
+            <Box3D />
+          </div>
         </h1>
 
         <a

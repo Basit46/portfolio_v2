@@ -10,6 +10,7 @@ export default {
       screens: {
         vsm: "400px",
         xmd: "900px",
+        dmd: "1280px",
       },
     },
   },

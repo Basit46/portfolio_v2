@@ -60,6 +60,7 @@ const About = () => {
         <li>Typescript</li>
         <li>React JS</li>
         <li>Next JS</li>
+        <li>Node JS</li>
         <li>Solidity</li>
       </ul>
       <ul ref={(el) => aboutTexts.current.push(el)}>
