@@ -1,33 +1,8 @@
-import { useEffect, useRef } from "react";
 import sparta from "../assets/logo.png";
-import { gsap } from "gsap";
 
 const About = () => {
-  const aboutTexts = useRef<any>([]);
-  const aboutSection = useRef(null);
-
-  useEffect(() => {
-    gsap.fromTo(
-      aboutTexts.current,
-      {
-        opacity: 0,
-        y: "50%",
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: aboutSection.current,
-          start: "top center",
-        },
-      }
-    );
-  }, []);
   return (
     <div
-      ref={aboutSection}
       id="about"
       className="about relative mt-[50px] min-h-[100vh] w-full px-[20px] vsm:px-[40px] xmd:px-[60px] pt-[50px]"
     >
@@ -35,44 +10,43 @@ const About = () => {
         <img className="sparta object-cover" src={sparta} alt="sparta_Img" />
       </div>
 
-      <h1
-        ref={(el) => aboutTexts.current.push(el)}
-        className="font-braah text-[4rem]"
-      >
-        Tech Stack
-      </h1>
-      {/* <div className="w-full xl:w-[50%]">
-        <p
-          ref={(el) => aboutTexts.current.push(el)}
-          className="text-[1.8rem] w-fit "
-        >
-          Transforming Vision into Reality: Elevating User Experiences Through
-          Innovative Frontend Development. Let's Collaborate to Create Web
-          Solutions that Captivate, Engage, and Inspire.
-        </p>
-      </div> */}
+      <h1 className="font-braah text-[4rem]">Tech Stack</h1>
 
-      <ul ref={(el) => aboutTexts.current.push(el)}>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Tailwind CSS</li>
-        <li>Javascript</li>
-        <li>Typescript</li>
-        <li>React JS</li>
-        <li>Next JS</li>
-        <li>Node JS</li>
-        <li>Solidity</li>
-      </ul>
-      <ul ref={(el) => aboutTexts.current.push(el)}>
-        <li>Ether JS</li>
-        <li>GSAP</li>
-        <li>Redux Toolkit</li>
-        <li>Firebase</li>
-        <li>Git & Github</li>
-        <li>Netlify</li>
-        <li>Vercel</li>
-        <li>Figma</li>
-      </ul>
+      <div>
+        <h1>Frontend:</h1>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Typescript</li>
+          <li>Tailwind CSS</li>
+          <li>React JS</li>
+          <li>Next JS</li>
+          <li>Redux Toolkit</li>
+          <li>Firebase</li>
+          <li>GSAP</li>
+        </ul>
+      </div>
+
+      <div>
+        <h1>Backend:</h1>
+        <ul>
+          <li>Node JS</li>
+          <li>Express JS</li>
+          <li>MongoDB</li>
+          <li>RESTful APIs</li>
+        </ul>
+      </div>
+
+      <div>
+        <h1>Blockchain:</h1>
+        <ul>
+          <li>Solidity</li>
+          <li>HardHat</li>
+          <li>Ethers.js</li>
+          <li>IPFS</li>
+        </ul>
+      </div>
     </div>
   );
 };

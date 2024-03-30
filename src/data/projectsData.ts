@@ -87,8 +87,8 @@ export const projectsData = [
     id: 5,
     img: bookmarker,
     title: "Online Bookmarker",
-    desc: "An online bookmarker where you can save different things from different sources",
-    site: "https://online-bookmarker.netlify.app/",
-    github: "https://github.com/Basit46/Online-Bookmarker",
+    desc: "A dynamic bookmarking tool that lets you organize and access your favorite online content, with intuitive category creation, robust security measures, and cross-device synchronization.",
+    site: "https://cleanbookmarker.vercel.app/",
+    github: "https://github.com/Basit46/bookmarker",
   },
 ];

@@ -13,10 +13,13 @@
     @apply text-[2rem] md:text-[1.4rem] cursor-pointer hover:text-blue-600 duration-500;
   }
   .about ul {
-    @apply flex flex-wrap gap-x-[20px] gap-y-[5px] w-full vsm:w-[80%] xmd:w-[40%] mt-[40px];
+    @apply flex flex-wrap gap-x-[10px] gap-y-[5px] w-full vsm:w-[80%] xmd:w-[40%] mb-[20px];
+  }
+  .about ul h1 {
+    @apply block;
   }
   .about li {
-    @apply text-[1.3rem] vsm:text-[1.5rem];
+    @apply bg-black px-[10px] py-[4px] text-[1.3rem] vsm:text-[1.2rem];
   }
   .project .link {
     @apply bg-gray-600 px-[20px] py-[8px] flex rounded-[20px] w-fit;
@@ -33,7 +36,6 @@
   perspective: 1000px;
   perspective-origin: top right;
 }
-
 .sides {
   position: relative;
   transform-style: preserve-3d;

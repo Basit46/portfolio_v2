@@ -21,8 +21,8 @@ const Footer = () => {
       <div className="mt-[50px] vsm:mt-[100px] xmd:mt-0 vsm:flex justify-between">
         <p className="text-[1.6rem] mb-[20px] vsm:mb-0">
           Basit
-          <span className="text-[red] text-[0.9rem]">
-            .css.tsx.jsx.idan.dev
+          <span className="text-[gold] text-[0.9rem]">
+            @ {new Date().getFullYear()}
           </span>
         </p>
         <div className="flex gap-[20px]">
