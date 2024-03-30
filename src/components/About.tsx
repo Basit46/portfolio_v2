@@ -10,7 +10,9 @@ const About = () => {
         <img className="sparta object-cover" src={sparta} alt="sparta_Img" />
       </div>
 
-      <h1 className="font-braah text-[4rem] z-[2] relative">Tech Stack</h1>
+      <h1 className="mb-[40px] font-braah leading-[0.9] text-[4rem] z-[2] relative">
+        Tech Stack
+      </h1>
 
       <div className="sec1 z-[2] relative">
         <h1>Frontend:</h1>
