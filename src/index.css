@@ -21,6 +21,15 @@
   .about li {
     @apply bg-black px-[10px] py-[4px] text-[1.3rem] vsm:text-[1.2rem];
   }
+  .about .sec1 li {
+    @apply bg-[aqua] text-black;
+  }
+  .about .sec2 li {
+    @apply bg-[tomato] text-black;
+  }
+  .about .sec3 li {
+    @apply bg-[chocolate];
+  }
   .project .link {
     @apply bg-gray-600 px-[20px] py-[8px] flex rounded-[20px] w-fit;
   }
