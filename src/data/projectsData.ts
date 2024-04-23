@@ -1,9 +1,8 @@
 import bookmarker from "../assets/bookmarker.png";
-// import getcollab from "../assets/gchome.png";
 import nique from "../assets/nique-home.png";
 import unicus from "../assets/unicus.png";
 import harmony from "../assets/harmony.png";
-import verso from "../assets/verso.png";
+// import verso from "../assets/verso.png";
 import thrifts from "../assets/thrifts.png";
 import newnft from "../assets/newnft.jpeg";
 import hotel from "../assets/hotel.png";
@@ -26,21 +25,13 @@ export const projectsData = [
     site: "https://newnftcards.vercel.app/",
     github: "https://github.com/Basit46/nft-cards-website",
   },
-  {
-    id: 6,
-    img: verso,
-    title: "Verso Blog",
-    desc: "A Blog where different people can sign up and contribute to the blog by writing articles",
-    site: "https://verso-blog.vercel.app/",
-    github: "https://github.com/Basit46/Blog",
-  },
   // {
-  //   id: 1,
-  //   img: getcollab,
-  //   title: "Get Collab",
-  //   desc: "A site I built that enables people from various areas in tech meet and collaborate on projects",
-  //   site: "https://getcollab.netlify.app/",
-  //   github: "https://github.com/Basit46/Get-Collab",
+  //   id: 6,
+  //   img: verso,
+  //   title: "Verso Blog",
+  //   desc: "A Blog where different people can sign up and contribute to the blog by writing articles",
+  //   site: "https://verso-blog.vercel.app/",
+  //   github: "https://github.com/Basit46/Blog",
   // },
   {
     id: 10,
