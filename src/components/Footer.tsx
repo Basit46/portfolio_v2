@@ -22,9 +22,10 @@ const Footer = () => {
         <p className="text-[1.6rem] mb-[20px] vsm:mb-0">
           Basit
           <span className="text-[gold] text-[0.9rem]">
-            @ {new Date().getFullYear()}
+            @{new Date().getFullYear()}
           </span>
         </p>
+
         <div className="flex gap-[20px]">
           <a href="https://github.com/Basit46" target="blank">
             <FaGithub />

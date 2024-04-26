@@ -11,6 +11,7 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarPropType) => {
   return (
     <nav className="z-[3] w-full h-[12vh] px-[20px] vsm:px-[40px] xmd:px-[60px] py-[20px] flex justify-between items-center">
       <h1 className="text-[2rem]">Basit</h1>
+
       <ul
         className={`${
           isOpen ? "" : "hidden md:flex"
@@ -18,41 +19,45 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarPropType) => {
       >
         <Link
           activeClass="active"
+          onClick={() => setIsOpen(false)}
           to="about"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
         >
-          <li onClick={() => setIsOpen(false)}>Tech Stack</li>
+          <li>Tech Stack</li>
         </Link>
 
         <Link
           activeClass="active"
+          onClick={() => setIsOpen(false)}
           to="projects"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
         >
-          <li onClick={() => setIsOpen(false)}>Projects</li>
+          <li>Projects</li>
         </Link>
 
         <Link
           activeClass="active"
+          onClick={() => setIsOpen(false)}
           to="contact"
           spy={true}
           smooth={true}
           offset={-70}
           duration={2000}
         >
-          <li onClick={() => setIsOpen(false)}>Contact</li>
+          <li>Contact</li>
         </Link>
 
         <a href="https://github.com/Basit46" target="blank">
           <li>Github</li>
         </a>
       </ul>
+
       <FaBars
         onClick={() => setIsOpen((prev) => !prev)}
         className="md:hidden text-[30px] z-[20]"
