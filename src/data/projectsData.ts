@@ -2,7 +2,7 @@ import bookmarker from "../assets/bookmarker.png";
 import nique from "../assets/nique-home.png";
 import unicus from "../assets/unicus.png";
 import harmony from "../assets/harmony.png";
-// import verso from "../assets/verso.png";
+import verso from "../assets/verso.png";
 import thrifts from "../assets/thrifts.png";
 import newnft from "../assets/newnft.jpeg";
 import hotel from "../assets/hotel.png";
@@ -25,14 +25,14 @@ export const projectsData = [
     site: "https://newnftcards.vercel.app/",
     github: "https://github.com/Basit46/nft-cards-website",
   },
-  // {
-  //   id: 6,
-  //   img: verso,
-  //   title: "Verso Blog",
-  //   desc: "A Blog where different people can sign up and contribute to the blog by writing articles",
-  //   site: "https://verso-blog.vercel.app/",
-  //   github: "https://github.com/Basit46/Blog",
-  // },
+  {
+    id: 6,
+    img: verso,
+    title: "Verso Blog",
+    desc: "A Blog where different people can sign up and contribute to the blog by writing articles",
+    site: "https://verso-blog.vercel.app/",
+    github: "https://github.com/Basit46/Blog",
+  },
   {
     id: 10,
     img: onesport,
